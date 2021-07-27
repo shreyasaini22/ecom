@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Orders Recieved(Admin)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">--------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-header">
+                <div class="brand">
+                    <span class="ti-dropbox-alt"></span>
+                    <span><a href="../index.html">Your Funda Shop</a></span>
+                </div>
+            
+            <label for="sidebar-toggle" class="ti-menu-alt"></label>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <span class="ti-home"></span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html">
+                        <span class="ti-face-smile"></span>
+                        <span>Manage User</span>
+                    </a>
+                </li><li>
+                    <a href="productlisting.html">
+                        <span class="ti-pencil"></span>
+                        <span>Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="product.html">
+                        <span class="ti-agenda"></span>
+                        <span>Add new product</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="orders.html">
+                        <span class="ti-face-smile"></span>
+                        <span>Orders</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="invoicemanagement.html">
+                        <span ><i class="fas fa-file-invoice"></i>
+                        </span>
+                        <span>Invoice Management</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html">
+                        <span class="ti-power-off"></span>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="main-content">
+
+        <header>
+            <div class="search-wrapper">
+                <span class="ti-search"></span>
+                <input type="search" placeholder="Search">
+            </div>
+
+            <div class="social-icons">
+                <span class="ti-bell"></span>
+                <span class="ti-comment"></span>
+                <div></div>
+            </div>
+        </header>
+
+        <main>
+
+            <h2 class="dash-title">Overview</h2>
+
+            <div class="dash-cards">
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="ti-briefcase"></span>
+                        <div>
+                            <h5>Account Balance</h5>
+                            <h4>$30,659.45</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="">View all</a>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="ti-reload"></span>
+                        <div>
+                            <h5>Pending</h5>
+                            <h4>$19,500.45</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="invoicemanagement.html">View all</a>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="ti-check-box"></span>
+                        <div>
+                            <h5>Processed</h5>
+                            <h4>$20,659</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="">View all</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="recent">
+                <div class="activity-grid">
+                    <div class="activity-card">
+                        <h3>Recent activity</h3>
+
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Order</th>
+                                        <th>Customer</th>
+                                        <th>Ship to</th>
+                                        <th>Price</th>
+                                        <th>Purchase Date</th>
+                                        <th>Delivery Date</th>
+                                        <th>Team </th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>123da</td>
+                                        <td>Sanjana</td>
+                                        <td>bangalore</td>
+                                        <td>
+                                        $340</td>
+                                        <td>15 Aug, 2020</td>
+                                        <td>22 Aug, 2020</td>
+                                        <td class="td-team">
+                                            <a href="customerprofile.html"><div class="img-1"></div></a>
+                                            <a href="customerprofile.html"><div class="img-2"></div></a>
+                                            <a href="customerprofile.html"><div class="img-3"></div></a>
+                                        </td>
+                                        <td>
+                                            <span class="badge success">Delivered</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ds234</td>
+                                        <td>Sunitha</td>
+                                        <td>Chennai</td>
+                                        <td> $270</td>
+                                        <td>15 Aug, 2020</td>
+                                        <td>22 Aug, 2020</td>
+                                        <td class="td-team">
+                                            <a href="customerprofile.html"><div class="img-1"></div></a>
+                                            <a href="customerprofile.html"><div class="img-2"></div></a>
+                                            <a href="customerprofile.html"><div class="img-3"></div></a>
+                                        </td>
+                                        <td>
+                                            <span class="badge warning">Processing</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3dfr3</td>
+                                        <td>Kishor</td>
+                                        <td>Delhi</td>
+                                        <td> $400</td>
+                                        <td>15 Aug, 2020</td>
+                                        <td>22 Aug, 2020</td>
+                                        <td class="td-team">
+                                            <a href="customerprofile.html"><div class="img-1"></div></a>
+                                            <a href="customerprofile.html"><div class="img-2"></div></a>
+                                            <a href="customerprofile.html"><div class="img-3"></div></a>
+                                        </td>
+                                        <td>
+                                            <span class="badge success">Delivered</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>234der</td>
+                                        <td>Rahul</td>
+                                        <td>kerala</td>
+                                        <td> $340</td>
+                                        <td>15 Aug, 2020</td>
+                                        <td>22 Aug, 2020</td>
+                                        <td class="td-team">
+                                            <a href="customerprofile.html"><div class="img-1"></div></a>
+                                            <a href="customerprofile.html"><div class="img-2"></div></a>
+                                            <a href="customerprofile.html"><div class="img-3"></div></a>
+                                        </td>
+                                        <td>
+                                            <span class="badge warning">Processing</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3dfr3</td>
+                                        <td>Kishor</td>
+                                        <td>Delhi</td>
+                                        <td> $400</td>
+                                        <td>15 Aug, 2020</td>
+                                        <td>22 Aug, 2020</td>
+                                        <td class="td-team">
+                                            <a href="customerprofile.html"><div class="img-1"></div></a>
+                                            <a href="customerprofile.html"><div class="img-2"></div></a>
+                                            <a href="customerprofile.html"><div class="img-3"></div></a>
+                                        </td>
+                                        <td>
+                                            <span class="badge success">Delivered</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3dfrw3</td>
+                                        <td>ramesh</td>
+                                        <td>chennai</td>
+                                        <td> $499</td>
+                                        <td>18 Aug, 2020</td>
+                                        <td>29 Aug, 2020</td>
+                                        <td class="td-team">
+                                            <a href="customerprofile.html"><div class="img-1"></div></a>
+                                            <a href="customerprofile.html"><div class="img-2"></div></a>
+                                            <a href="customerprofile.html"><div class="img-3"></div></a>
+                                        </td>
+                                        <td>
+                                            <span class="badge success">Delivered</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3edfr3</td>
+                                        <td>raghav</td>
+                                        <td>Delhi</td>
+                                        <td> $1400</td>
+                                        <td>17 Aug, 2020</td>
+                                        <td>24 Aug, 2020</td>
+                                        <td class="td-team">
+                                            <a href="customerprofile.html"><div class="img-1"></div></a>
+                                            <a href="customerprofile.html"><div class="img-2"></div></a>
+                                            <a href="customerprofile.html"><div class="img-3"></div></a>
+                                        </td>
+                                        <td>
+                                            <span class="badge success">Delivered</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3dfd3</td>
+                                        <td>Kiran</td>
+                                        <td>Delhi</td>
+                                        <td> $450</td>
+                                        <td>15 Sep, 2020</td>
+                                        <td>22 Sep, 2020</td>
+                                        <td class="td-team">
+                                            <a href="customerprofile.html"><div class="img-1"></div></a>
+                                            <a href="customerprofile.html"><div class="img-2"></div></a>
+                                            <a href="customerprofile.html"><div class="img-3"></div></a>
+                                        </td>
+                                        <td>
+                                            <span class="badge success">Delivered</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>56e43</td>
+                                        <td>Nischal</td>
+                                        <td>bangalore</td>
+                                        <td> $1458</td>
+                                        <td>15 Aug, 2020</td>
+                                        <td>22 Aug, 2020</td>
+                                        <td class="td-team">
+                                            <a href="customerprofile.html"><div class="img-1"></div></a>
+                                            <a href="customerprofile.html"><div class="img-2"></div></a>
+                                            <a href="customerprofile.html"><div class="img-3"></div></a>
+                                        </td>
+                                        <td>
+                                            <span class="badge success">Delivered</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="summary">
+                        <div class="summary-card">
+                            <div class="summary-single">
+                                <span class="ti-id-badge"></span>
+                                <div>
+                                    <h5>196</h5>
+                                    <small>Number of staff</small>
+                                </div>
+                            </div>
+                            <div class="summary-single">
+                                <span class="ti-calendar"></span>
+                                <div>
+                                    <h5>50</h5>
+                                    <small>Number of orders to delivery</small>
+                                </div>
+                            </div>
+                            <div class="summary-single">
+                                <span class="ti-face-smile"></span>
+                                <div>
+                                    <h5>12</h5>
+                                    <small>Profile update request</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-card">
+                            <div class="b-flex">
+                                <a href="customerprofile.html"><div class="b-img"></div></a>
+                                <div class="b-info">
+                                    <h5>Delivery Team Meeting</h5>
+                                    <small>teams meet at 5pm Today</small>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <button>
+                                    <span class="ti-calendar"></span>
+                                    Remind
+                                </button>
+                            </div>
+                        </div>
+                        <div class="b-card">
+                            <div class="b-flex">
+                                <a href="customerprofile.html"><div class="b-img1"></div></a>
+                                <div class="b-info">
+                                    <h5>Sales Team Meeting</h5>
+                                    <small>Teams meet at 8pm Today</small>
+                                </div>
+                            </div>
+                        
+                            <div class="text-center">
+                                <button>
+                                    <span class="ti-calendar"></span>
+                                    Remind
+                                </button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="b-card">
+                            <div class="b-flex">
+                                <a href="customerprofile.html"><div class="b-img2"></div></a>
+                                <div class="b-info">
+                                    <h5>Profits</h5>
+                                    <small>$3429</small>
+                                </div>
+                            </div>
+                        
+                            <div class="text-center">
+                                <button>
+                                    <span class="ti-ink-pen"></span>
+                                    View
+                                </button>
+                            </div>
+                        </div>
+                    
+
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+* {
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+	font-family: "Poppins", sans-serif; 
+	
+   } 
+
+.similar{
+     text-align: center;
+	 border: none;
+	 border-radius: 5px;
+	 margin-bottom: 100px;
+}
+
+.similar .similar-title{
+	font-weight: 600; font-size: 22px;
+}
+.similar .similar-text{font-size: 16px}
+
+.media{
+	display: flex;
+}
+
+.nav{
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+.offer{
+	padding-top: 10px;
+}
+
+/* .dropdown{
+	padding-bottom: 10px;
+	padding-top: 10px;
+} */
+
+.comment, .comment_detail{
+	padding-left: 20px;
+} 
+.comment{
+	font-weight: bold;
+}
+
+
+
+.btn-wrapper{
+    width: 100%;
+    height: auto;
+    
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+	padding-right: 30px;
+}
+
+.btn-wrapper .btn 
+{ 
+       box-shadow: 2px 5px 20px rgba(32,57,90,0.479);
+       background: #03849D;
+       width: 120px;
+       border-radius: 32px;
+       color: #fbfbfb;
+       font-size: 14px;
+       padding:2px,48px;
+ } 
+
+ .btn_cart{
+	 background: rgb(15, 15, 15);
+	width: auto;
+	
+ }
+ 
+ .btn{
+	 color: white;
+	 text-align: center;
+ }
+ .btn :hover{
+	 color:white
+ }
+ .btn_buy{ 
+	 background:#03849D;
+	 width: auto;
+ }
+
+
+ 

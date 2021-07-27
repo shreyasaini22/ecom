@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="./css/invoicestyle.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--using FontAwesome---------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-header">
+                <div class="brand">
+                    <span class="ti-dropbox-alt"></span>
+                    <span><a href="../index.html">Your Funda Shop</a></span>
+                </div>
+            
+            <label for="sidebar-toggle" class="ti-menu-alt"></label>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <span class="ti-home"></span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html">
+                        <span class="ti-face-smile"></span>
+                        <span>Manage User</span>
+                    </a>
+                </li><li>
+                    <a href="productlisting.html">
+                        <span class="ti-pencil"></span>
+                        <span>Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="product.html">
+                        <span class="ti-agenda"></span>
+                        <span>Add new product</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="orders.html">
+                        <span class="ti-face-smile"></span>
+                        <span>Orders</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="invoicemanagement.html">
+                        <span ><i class="fas fa-file-invoice"></i>
+                        </span>
+                        <span>Invoice Management</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html">
+                        <span class="ti-power-off"></span>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="main-content">
+
+        <header>
+            <div class="search-wrapper">
+                <span class="ti-search"></span>
+                <input type="search" placeholder="Search">
+            </div>
+
+            <div class="social-icons">
+                <span class="ti-bell"></span>
+                <span class="ti-comment"></span>
+                <div></div>
+            </div>
+        </header>
+
+        <main>
+
+            <h2 class="dash-title">Create Invoice</h2>
+            <div class="invoice-box">
+              <table cellpadding="0" cellspacing="0">
+                <tr class="top">
+                  <td colspan="4">
+                    <table>
+                      <tr>
+                        <td class="title">
+                            <div class="brand">
+                                <span class="ti-dropbox-alt"></span>
+                                <span>Your Funda Shop</span>
+                            </div>
+                        </td>
+
+                        <td>
+                          Invoice #: 123<br> Created: May 1, 2021<br> Due: June 1, 2021
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr class="information">
+                  <td colspan="4">
+                    <table>
+                      <tr>
+                        <td>
+                          Sparksuite, Inc.<br> 12345 Sunny Road<br> Sunnyville, CA 12345
+                        </td>
+
+                        <td>
+                          Acme Corp.<br> John Doe<br> john@example.com
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr class="heading">
+                  <td colspan="3">Payment Method</td>
+                  <td>Check #</td>
+                </tr>
+
+                <tr class="details">
+                  <td colspan="3">Check</td>
+                  <td>1000</td>
+                </tr>
+
+                <tr class="heading">
+                  <td>Item</td>
+                  <td>Unit Cost</td>
+                  <td>Quantity</td>
+                  <td>Price</td>
+                </tr>
+
+                <tr class="item">
+                  <td><input /></td>
+                  <td><input type="number" /></td>
+                  <td><input type="number"/></td>
+                  <td>XYZ</td>
+                </tr>
+
+                <tr class="item">
+                  <td><input /></td>
+                  <td><input type="number" /></td>
+                  <td><input type="number"/></td>
+                  <td>XYZ</td>
+                </tr>
+
+                <tr class="item">
+                  <td><input /></td>
+                  <td><input type="number" /></td>
+                  <td><input type="number"/></td>
+                  <td>XYZ</td>
+                </tr>
+
+                <tr class="total">
+                  <td colspan="3"></td>
+                  <td>Total: XYZ</td>
+                </tr>
+
+            </table>
+            <button class="invoice-btn"><i class="fas fa-paper-plane"></i> Send</button>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

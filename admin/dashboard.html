@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Dashboard(Admin)</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--using FontAwesome---------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboardbody">
+
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-header">
+                <div class="brand">
+                    <span class="ti-dropbox-alt"></span>
+                    <span><a href="../index.html">Your Funda Shop</a></span>
+                </div>
+            
+            <label for="sidebar-toggle" class="ti-menu-alt"></label>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <span class="ti-home"></span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html">
+                        <span class="ti-face-smile"></span>
+                        <span>Manage User</span>
+                    </a>
+                </li><li>
+                    <a href="productlisting.html">
+                        <span class="ti-pencil"></span>
+                        <span>Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="product.html">
+                        <span class="ti-agenda"></span>
+                        <span>Add new product</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="orders.html">
+                        <span class="ti-face-smile"></span>
+                        <span>Orders</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="invoicemanagement.html">
+                        <span ><i class="fas fa-file-invoice"></i>
+                        </span>
+                        <span>Invoice Management</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html">
+                        <span class="ti-power-off"></span>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="main-content">
+
+        <header>
+            <div class="search-wrapper">
+                <span class="ti-search"></span>
+                <input type="search" placeholder="Search">
+            </div>
+
+            <div class="social-icons">
+                <span class="ti-bell"></span>
+                <span class="ti-comment"></span>
+                <div></div>
+            </div>
+        </header>
+
+        <main>
+
+            <h3 class="dash-title">Overview</h3>
+
+            <div class="dashboard-cards">
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="iconBox">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <div class="numbers">1M+</div>
+                            <div class="cardName">Customers</div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="users.html">View all</a>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="iconBox">
+                            <i class="fa fa-product-hunt" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <div class="numbers">80k</div>
+                            <div class="cardName">Products</div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="productlisting.html">View all</a>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="iconBox">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <div class="numbers">2,880</div>
+                            <div class="cardName">Orders</div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="orders.html">View all</a>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="iconBox">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <div class="numbers">1,054</div>
+                            <div class="cardName">Website Visit</div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#">View all</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="recent">
+                <div class="activity-grid">
+                    <div class="activity-card">
+                        <h5>Sales</h5>
+                        <h6>Last one year</h6>
+                        <span class="sales"><i class="far fa-circle"></i>Sales</span>
+                        <span class="visits"><i class="far fa-circle"></i>Visits</span>
+                        <svg class="dashboard" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="800px" height="459.3px" viewBox="0 0 700 160" style="enable-background:new 0 0 500 459.3;" xml:space="preserve">
+						<style type="text/css">
+							.body{fill:white;}
+							.st0{fill:#eaecf2;}
+							.st1{fill:#5E7EBE;}
+							.st2{opacity:0.5;fill:#FFFFFF;}
+							.st3{fill:#FFFFFF;}
+							.st4{opacity:0.5;fill:#B9BCC1;}
+							.st5{opacity:0.1;fill:#5E7EBE;}
+							.st6{fill:none;stroke:#5E7EBE;stroke-miterlimit:10;}
+							.st7{fill:#FFFFFF;stroke:#5E7EBE;stroke-miterlimit:10;}
+							.st8{fill:none;stroke:#4DC4D0;stroke-miterlimit:10;}
+							.st9{opacity:0.1;fill:#4DC4D0;}
+							.st10{fill:#FFFFFF;stroke:#4DC4D0;stroke-miterlimit:10;}
+							.st11{fill:none;stroke:#5E7EBE;stroke-width:18;stroke-miterlimit:10;}
+							.st12{fill:none;stroke:#4DC4D0;stroke-width:18;stroke-miterlimit:10;}
+							.st13{fill:none;stroke:#384E72;stroke-width:18;stroke-miterlimit:10;}
+							.st14{fill:#4DC4D0;}
+							.st15{fill:#384E72;}
+						</style>
+						<g class="line-graphs chart">
+							<rect class="background st3" x="197.3" y="59.4" width="290.7" height="187.5"></rect>
+							<g class="line-graph">
+								<path class="line st6" d="M30.8,150.4 100.9,178.4 150,97.2 187.4,134.8 265.6,75.9 314.7,101 387.7,27.3 428.3,55.7 451.8,100.4 504.9,58.4 574,167.2  627.4,114.8 "></path>
+								<polygon class="area st5" points="30.3,230 30.8,150.4 100.9,178.4 150,97.2 187.4,134.8 265.6,75.9 314.7,101 387.7,27.3 428.3,55.7 451.8,100.4 504.9,58.4 574,167.2 627.4,114.8 627.4,230 30.3,230		"></polygon>
+								<circle class="dot st7" cx="30.8" cy="150.4" r="2.7"></circle>
+								<circle class="dot st7" cx="100.9" cy="178.4" r="2.7"></circle>
+								<circle class="dot st7" cx="150" cy="97.2" r="2.7"></circle>
+								<circle class="dot st7" cx="187.4" cy="134.8" r="2.7"></circle>
+								<circle class="dot st7" cx="265.6" cy="75.9" r="2.7"></circle>
+								<circle class="dot st7" cx="314.7" cy="101" r="2.7"></circle>
+								<circle class="dot st7" cx="387.7" cy="27.3" r="2.7"></circle>
+								<circle class="dot st7" cx="428.3" cy="55.7" r="2.7"></circle>
+								<circle class="dot st7" cx="451.8" cy="100.4" r="2.7"></circle>
+								<circle class="dot st7" cx="504.9" cy="58.4" r="2.7"></circle>
+								<circle class="dot st7" cx="574" cy="167.2" r="2.7"></circle>
+								<circle class="dot st7" cx="627.4" cy="114.8" r="2.7"></circle>
+							</g>
+							<g class="line-graph">
+								<path class="line st8" d="M30.8,230 100.9,151.9 150,157.3 187.4,91.4 245.6,97.3 314.7,59.3 387.7,71.3 428.3,121.2 451.8,64.4 504.9,87.3 574,59.3 627.4,26		"></path>
+								<polygon class="area st9" points="30.8,230 100.9,151.9 150,157.3 187.4,91.4 245.6,97.3 314.7,59.3 387.7,71.3 428.3,121.2 451.8,64.4 504.9,87.3 574,59.3 627.4,26
+								627.4,230 		"></polygon>
+								<circle class="dot st10" cx="30.8" cy="230" r="2.7"></circle>
+								<circle class="dot st10" cx="100.9" cy="151.9" r="2.7"></circle>
+								<circle class="dot st10" cx="150" cy="157.3" r="2.7"></circle>
+								<circle class="dot st10" cx="187.4" cy="91.4" r="2.7"></circle>
+								<circle class="dot st10" cx="245.6" cy="97.3" r="2.7"></circle>
+								<circle class="dot st10" cx="314.7" cy="59.3" r="2.7"></circle>
+								<circle class="dot st10" cx="387.7" cy="71.3" r="2.7"></circle>
+								<circle class="dot st10" cx="428.3" cy="121.2" r="2.7"></circle>
+								<circle class="dot st10" cx="451.8" cy="64.4" r="2.7"></circle>
+								<circle class="dot st10" cx="504.9" cy="87.3" r="2.7"></circle>
+								<circle class="dot st10" cx="574" cy="59.3" r="2.7"></circle>
+								<circle class="dot st10" cx="627.4" cy="26" r="2.7"></circle>
+							</g>
+						</g>
+					</svg>
+                    </div>
+
+                    <div class="summary">
+                        <h5>Top Selling Products</h5>
+                        <div class="dash-card dash-flex">
+                            <img class="dash_img" src="../images/promo22.jpg" alt="">
+                            <div class="b-info">
+                                <h6>Womer Western Wear</h6>
+                            </div>
+                        </div>
+                        <div class="dash-card dash-flex">
+                            <img class="dash_img" src="../images/product14.jpg" alt="">
+                            <div class="b-info">
+                                <h6>Boys Footwear</h6>
+                            </div>
+                        </div>
+                        <div class="dash-card dash-flex">
+                            <img class="dash_img" src="../images/promo5.jpg" alt="">
+                            <div class="b-info">
+                                <h6>BackPacks</h6>
+                            </div>
+                        </div>
+                        <div class="dash-card dash-flex">
+                            <img class="dash_img" src="../images/product11.jpg" alt="">
+                            <div class="b-info">
+                                <h6>Watches</h6>
+                            </div>
+                        </div>
+                        <div class="dash-card dash-flex">
+                            <img class="dash_img" src="../images/promo19.jpg" alt="">
+                            <div class="b-info">
+                                <h6>Cleansers</h6>
+                            </div>
+                        </div>
+                        <div class="dash-card dash-flex">
+                            <img class="dash_img" src="../images/promo4.jpg" alt="">
+                            <div class="b-info">
+                                <h6>Belts</h6>
+                            </div>
+                        </div>
+                        <div class="dash-card dash-flex">
+                            <img class="dash_img" src="../images/promo20.jpg" alt="">
+                            <div class="b-info">
+                                <h6>Cell Phones</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="activity-card">
+                        <h5>Recent Orders per week</h5>
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Name of products</td>
+                                        <td>Total Products</td>
+                                        <td>Purchases</td>
+                                        <td>Sales</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Footwear</td>
+                                        <td>2,300</td>
+                                        <td>1,100</td>
+                                        <td>30,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BackPacks</td>
+                                        <td>1,300</td>
+                                        <td>400</td>
+                                        <td>10,000</td>
+                                    </tr>
+                                        
+                                    <tr>
+                                        <td>Shaving Tools</td>
+                                        <td>750</td>
+                                        <td>349</td>
+                                        <td>13,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Refrigerators</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>22,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Feminine Hygiene</td>
+                                        <td>500</td>
+                                        <td>120</td>
+                                        <td>4,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Masks</td>
+                                        <td>2,000</td>
+                                        <td>1,500</td>
+                                        <td>25,000</td>
+                                    </tr>
+                                        
+                                    <tr>
+                                        <td>Baby Care</td>
+                                        <td>800</td>
+                                        <td>600</td>
+                                        <td>31,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Health & Medicines</td>
+                                        <td>8,000</td>
+                                        <td>6,000</td>
+                                        <td>60,000</td>
+                                    </tr>
+                                        
+                                    <tr>
+                                        <td>Solar Panel</td>
+                                        <td>200</td>
+                                        <td>34</td>
+                                        <td><span class="sales">17,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="activity-card">
+                        <h5>Expense Ratio of last 3 months</h5>
+                        <h6>Spending on various categories</h6>
+                        <span class="networking"><i class="fas fa-circle"></i>Networking</span>
+                        <span class="operational"><i class="fas fa-circle"></i>Operational</span>
+                        <span class="other"><i class="fas fa-circle"></i>Other</span>
+
+                        <svg class="dashboard" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 200" style="enable-background:new 0 0 500 459.3;" xml:space="preserve">
+						<style type="text/css">
+							.body{fill:white;}
+							.st0{fill:#eaecf2;}
+							.st1{fill:#5E7EBE;}
+							.st2{opacity:0.5;fill:#FFFFFF;}
+							.st3{fill:#FFFFFF;}
+							.st4{opacity:0.5;fill:#B9BCC1;}
+							.st5{opacity:0.1;fill:#5E7EBE;}
+							.st6{fill:none;stroke:#5E7EBE;stroke-miterlimit:10;}
+							.st7{fill:#FFFFFF;stroke:#5E7EBE;stroke-miterlimit:10;}
+							.st8{fill:none;stroke:#4DC4D0;stroke-miterlimit:10;}
+							.st9{opacity:0.1;fill:#4DC4D0;}
+							.st10{fill:#FFFFFF;stroke:#4DC4D0;stroke-miterlimit:10;}
+							.st11{fill:none;stroke:#5E7EBE;stroke-width:18;stroke-miterlimit:10;}
+							.st12{fill:none;stroke:#4DC4D0;stroke-width:18;stroke-miterlimit:10;}
+							.st13{fill:none;stroke:#384E72;stroke-width:18;stroke-miterlimit:10;}
+							.st14{fill:#4DC4D0;}
+							.st15{fill:#384E72;}
+						</style>
+						<g class="chart">
+							<rect class="background st3" x="197.3" y="259.4" width="290.7" height="187.5"></rect>
+							<g class="donut-chart">
+								<circle class="st11" cx="211.3" cy="100.3" r="54.7"></circle>
+								<path class="st12" d="M172.6,139c-21.4-21.4-21.4-56,0-77.4s56-21.4,77.4,0s21.4,56,0,77.4"></path>
+								<path class="st13" d="M172.6,139c-15.5-15.5-19.8-37.9-12.8-57.3c2.6-7.4,6.9-14.3,12.8-20.2c14.4-14.4,35-19.1,53.3-14.1"></path>
+							</g>
+							<g class="donut-chart">
+								<circle class="st13" cx="73.3" cy="100.3" r="54.7"></circle>
+								<path class="st12" d="M73.3,155.1c-30.2,0-54.7-24.5-54.7-54.7s24.5-54.7,54.7-54.7s54.7,24.5,54.7,54.7"></path>
+								<path class="st11" d="M73.3,155.1c-21.9,0-40.8-12.9-49.5-31.4c-3.3-7.1-5.2-15-5.2-23.3c0-20.4,11.2-38.3,27.8-47.7"></path>
+							</g>
+							<g class="donut-chart">
+								<circle class="st13" cx="348.3" cy="100.3" r="54.7"></circle>
+								<path class="st12" d="M309.8,139c-21.4-21.4-21.4-56,0-77.4s56-21.4,77.4,0s21.4,56,0,77.4"></path>
+								<path class="st11" d="M348.6,155.1c-21.9,0-40.8-12.9-49.5-31.4c-3.3-7.1-5.2-15-5.2-23.3c0-20.4,11.2-38.3,27.8-47.7"></path>
+							</g>
+						</g>
+					</svg>
+                    </div>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

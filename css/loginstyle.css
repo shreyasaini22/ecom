@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+	background-color:#f6f5f5;
+	margin:0px;
+	padding:0px;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	height:60px;
+	background-color:#ffffff;
+	padding:0px 5%;	
+}
+
+.logo{
+	font-family:RoadTest;
+	color:#ff4545;
+	font-weight: 600;
+	padding: 0.5rem;
+	font-size: 1.75em;
+	display:block;
+	margin:0 auto;
+}
+.LR{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form{
+	z-index: 1;
+	font-family: "Poppins", sans-serif;
+	background-color: #fff;
+	text-align: center;	
+	width: 25em;
+    padding: 5vh;
+    margin-top:5vh;
+    box-shadow: -2px 3px 25px 12px rgba(0,0,0,0.28);
+	-webkit-box-shadow: -2px 3px 25px 12px rgba(0,0,0,0.28);
+	-moz-box-shadow: -2px 3px 25px 12px rgba(0,0,0,0.28);
+}
+
+.form i{
+	z-index: 1;
+	color: #ccc;
+	font-size: 65px;
+	margin-bottom: 30px;
+}
+
+.form .signup-form{
+	display: none;
+}
+
+
+.form .user-input{
+	width: 90%;
+	height: 55px;
+	margin-bottom: 30px;
+	outline: none;
+	border: none;
+ 	background: rgba(0,0,0,0.14);
+	color:black;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 5px;
+	transition: 0.5s;
+	transition-property: border-left, border-right, box-shadow;
+}
+
+ .form .user-input:hover, .form .user-input:focus, .form .user-input:active{
+	box-shadow: -2px 1px 21px 4px #5F9BF3;
+ } 
+
+.form .options-01{
+	margin-bottom: 50px;
+}
+
+.form .options-01 input{
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+}
+
+.form .options-01 .remember-me{
+	color: #888;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	float: left;
+	cursor: pointer;
+}
+
+
+.form .options-01 a{
+	color: #000;
+	font-size: 14px;
+	font-style: italic;
+	float: right;
+}
+
+.form .btn{
+	outline: none;
+	border: none;
+	width: 90%;
+	height: 55px;
+	background: #4285F4;
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.5s;
+	transition-property: border-left, border-right, box-shadow;
+}
+
+ .form .btn:hover{ 
+ 	background-color: green;
+ 	color: black;
+ }
+
+
+.form .options-02{
+	color: #000;
+	font-size: 14px;
+	margin-top: 30px;
+}
+
+.form .options-02 a{
+	color: #4285F4;
+} 
+
+/* Responsive CSS */
+@media(max-width:1000px){
+	*{
+		box-sizing: border-box;
+	}
+
+
+@media screen and (max-width: 500px){
+	.form{
+		width: 95%;
+	}
+
+	.form .user-input{
+		width: 100%
+	}
+
+	.form .btn{
+		width: 100%;
+	}
+}

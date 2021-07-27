@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Invoice management(Admin)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--using FontAwesome---------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-header">
+                <div class="brand">
+                    <span class="ti-dropbox-alt"></span>
+                    <span><a href="../index.html">Your Funda Shop</a></span>
+                </div>
+            
+            <label for="sidebar-toggle" class="ti-menu-alt"></label>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <span class="ti-home"></span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html">
+                        <span class="ti-face-smile"></span>
+                        <span>Manage User</span>
+                    </a>
+                </li><li>
+                    <a href="productlisting.html">
+                        <span class="ti-pencil"></span>
+                        <span>Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="product.html">
+                        <span class="ti-agenda"></span>
+                        <span>Add new product</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="orders.html">
+                        <span class="ti-face-smile"></span>
+                        <span>Orders</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="invoicemanagement.html">
+                        <span ><i class="fas fa-file-invoice"></i>
+                        </span>
+                        <span>Invoice Management</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html">
+                        <span class="ti-power-off"></span>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="main-content">
+
+        <header>
+            <div class="search-wrapper">
+                <span class="ti-search"></span>
+                <input type="search" placeholder="Search">
+            </div>
+
+            <div class="social-icons">
+                <span class="ti-bell"></span>
+                <span class="ti-comment"></span>
+                <div></div>
+            </div>
+        </header>
+
+        <main>
+
+            <h2 class="dash-title">Invoice management</h2>
+
+
+            <div class="dashboard-cards">
+
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="iconBox">
+                            <i class="fas fa-pen" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <div class="cardName">New Invoice</div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="invoice.html">Go</a>
+                    </div>
+                </div>
+            </div>
+            <section class="recent">
+                <div class="invoice-grid">
+                    <div class="activity-card">
+                        <h2>Invoices</h2>
+
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Order Number</th>
+                                        <th>Customer's Name</th>
+                                        <th>Billing Period</th>
+                                        <th>Invoice Status</th>
+                                        <th>Total</th>
+                                        <th>Paid</th>
+                                        <th>Balance</th>
+                                        <th>Payment Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ORD.927627</td>
+                                        <td>Sanjana</td>
+                                        <td>10/01/21-10/12/21</td>
+                                        <td>
+                                            <span class="badge success">Delivered</span>
+                                        </td>
+                                        <td>3400</td>
+                                        <td>3400</td>
+                                        <td>0</td>
+                                        <td>
+                                            <span class="badge success">Paid</span>
+                                        </td>
+                                        <td><a href="invoice.html"><i class="fas fa-eye edit-icon"></i></a> <a href="invoice.html"><i class="fas fa-pen close-icon"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ORD.514261</td>
+                                        <td>Sunitha</td>
+                                        <td>04/01/21-04/12/21</td>
+                                        <td>
+                                            <span class="badge warning">Processing</span>
+                                        </td>
+                                        <td>2700</td>
+                                        <td>1700</td>
+                                        <td>1000</td>
+                                        <td>
+                                            <span class="badge warning">Pending</span>
+                                        </td>
+                                        <td><a href="invoice.html"><i class="fas fa-eye edit-icon"></i></a> <a href="invoice.html"><i class="fas fa-pen close-icon"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ORD.567163</td>
+                                        <td>Kishor</td>
+                                        <td>01/06/20-01/06/21</td>
+                                        <td>
+                                            <span class="badge success">Delivered</span>
+                                        </td>
+                                        <td>4000</td>
+                                        <td>4000</td>
+                                        <td>0</td>
+                                        <td>
+                                            <span class="badge success">Paid</span>
+                                        </td>
+                                        <td><a href="invoice.html"><i class="fas fa-eye edit-icon"></i></a> <a href="invoice.html"><i class="fas fa-pen close-icon"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ORD.451534</td>
+                                        <td>Rahul</td>
+                                        <td>10/10/19-10/10/20</td>
+                                        <td>
+                                            <span class="badge warning">Processing</span>
+                                        </td>
+                                        <td>3400</td>
+                                        <td>3000</td>
+                                        <td>400</td>
+                                        <td>
+                                            <span class="badge warning">Pending</span>
+                                        </td>
+                                        <td><a href="invoice.html"><i class="fas fa-eye edit-icon"></i></a> <a href="invoice.html"><i class="fas fa-pen close-icon"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ORD.542672</td>
+                                        <td>Kishor</td>
+                                        <td>21/04/19-21/04/20</td>
+                                        <td>
+                                            <span class="badge success">Delivered</span>
+                                        </td>
+                                        <td>4000</td>
+                                        <td>1000</td>
+                                        <td>3000</td>
+                                        <td>
+                                            <span class="badge warning">Pending</span>
+                                        </td>
+                                        <td><a href="invoice.html"><i class="fas fa-eye edit-icon"></i></a> <a href="invoice.html"><i class="fas fa-pen close-icon"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ORD.542122</td>
+                                        <td>ramesh</td>
+                                        <td>17/02/19-17/02/20</td>
+                                        <td>
+                                            <span class="badge success">Delivered</span>
+                                        </td>
+                                        <td>4990</td>
+                                        <td>4990</td>
+                                        <td>0</td>
+                                        <td>
+                                            <span class="badge success">Paid</span>
+                                        </td>
+                                        <td><a href="invoice.html"><i class="fas fa-eye edit-icon"></i></a> <a href="invoice.html"><i class="fas fa-pen close-icon"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ORD.652021</td>
+                                        <td>raghav</td>
+                                        <td>02/01/19-02/01/20</td>
+                                        <td>
+                                            <span class="badge success">Delivered</span>
+                                        </td>
+                                        <td>14000</td>
+                                        <td>14000</td>
+                                        <td>0</td>
+                                        <td>
+                                            <span class="badge success">Paid</span>
+                                        </td>
+                                        <td><a href="invoice.html"><i class="fas fa-eye edit-icon"></i></a> <a href="invoice.html"><i class="fas fa-pen close-icon"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ORD.652521</td>
+                                        <td>Kiran</td>
+                                        <td>27/12/18-27/12/19</td>
+                                        <td>
+                                            <span class="badge success">Delivered</span>
+                                        </td>
+                                        <td>4500</td>
+                                        <td>4500</td>
+                                        <td>0</td>
+                                        <td>
+                                            <span class="badge success">Paid</span>
+                                        </td>
+                                        <td><a href="invoice.html"><i class="fas fa-eye edit-icon"></i></a> <a href="invoice.html"><i class="fas fa-pen close-icon"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ORD.652015</td>
+                                        <td>Nischal</td>
+                                        <td>20/10/19-20/10/20</td>
+                                        <td>
+                                            <span class="badge success">Delivered</span>
+                                        </td>
+                                        <td>14580</td>
+                                        <td>14580</td>
+                                        <td>0</td>
+                                        <td>
+                                            <span class="badge success">Paid</span>
+                                        </td>
+                                        <td><a href="invoice.html"><i class="fas fa-eye edit-icon"></i></a> <a href="invoice.html"><i class="fas fa-pen close-icon"></i></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
